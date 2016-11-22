@@ -66,7 +66,7 @@ function displayPreloadLogo(){
 	        <div class="inner">
 	            <div class="image">
 	                <img class="img1" src="<?php echo esc_url($logo_1) ?>" alt="">
-	                <img class="img2" src="<?php echo esc_url($logo_2) ?>" alt="">
+	                <img class="img2" src="<?php echo get_template_directory_uri() ?>/assets/images/gif_site.gif" alt="">
 	            </div>
 	            <div class="circle-ef"></div>
 	        </div>
