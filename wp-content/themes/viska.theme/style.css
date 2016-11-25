@@ -89,7 +89,7 @@ Text Domain: AweFramework
     color: #4ca799;
 }
 
-#owl-services .owl-controls .owl-buttons div:hover, #twitter .owl-buttons div:hover, #owl-news .owl-buttons div:hover, #testimonial .owl-buttons div:hover {
+#owl-services .owl-controls .owl-buttons div:hover, #twitter .owl-buttons div:hover, #owl-news .owl-buttons div:hover, #testimonial .owl-buttons div:hover, .services .owl-controls .owl-buttons div:hover {
     border-color: #4ca799;
     color: #4ca799
 }
@@ -140,4 +140,100 @@ Text Domain: AweFramework
 
 #content-sort .awe-services .item {
     background: rgba(255,255,255,0.7);
+}
+
+/* prices */
+
+#plans .item .price {
+    position: relative;
+    height: 128px;
+    padding-top: 25px;
+    background: linear-gradient(#42a598,#219390);
+}
+
+#plans .item .price:after, #plans .item .price:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+}
+
+#plans .item .price:before {
+    background: url(assets/images/part-price-top.png) no-repeat;
+    top: 0;
+}
+
+#plans .item .price:after {
+    background: url(assets/images/part-price-bottom.png) no-repeat;
+    bottom: 0;
+}
+
+/* testimoniales */
+
+#content-sort .testimonial.awe-section.awe-parallax p, #content-sort .testimonial.awe-section.awe-parallax span {
+    color: #fff;
+}
+
+#content-sort .testimonial.awe-section.awe-parallax h2 {
+    color: #48a899;
+}
+
+/* Contact */
+
+#contact label {
+    width: 100%;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    background: transparent;
+    border: #ccc solid 1px;
+    padding: 5px 8px;
+}
+
+#contact input[type="submit"] {
+    width: auto;
+    display: inline-block;
+    font-family: 'Raleway';
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 25px;
+    padding: 6px 20px;
+    float: right;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #4ca799;
+    color: #fff;
+}
+
+#about .about-img {
+    width: auto;
+}
+
+#about .about-img img {
+    left: 15px;
+    box-shadow: 0px 0px 110px rgba(0, 0, 0, 0.4);
+}
+
+#about .about-img:before {
+    content: "";
+    width: 230px;
+    height: 240px;
+    background: linear-gradient(#00938f,#ecf4d8);
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    margin: auto;
+}
+
+.js-header.col-sm-7.wow.fadeInUp.animated, .js-awe-get-items.col-sm-7.title.wow.fadeInhalf-text.animated {
+    margin-left: 40%;
 }

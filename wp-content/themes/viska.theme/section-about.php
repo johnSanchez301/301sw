@@ -18,6 +18,14 @@
                     $about->the_post(); 
                 ?>
             <?php if($customize['about']['header']['enable'] ) : ?>
+               <!-- Image Mobile -->
+                <?php 
+                if ( has_post_thumbnail() ) { 
+                    echo '<div class="about-img">';
+                    the_post_thumbnail();
+                    echo '</div>';
+                } 
+                ?>
                 <div class="js-header <?php if(has_post_thumbnail()) echo 'col-sm-7';else echo 'col-xs-12'; ?> wow <?php animationHeader('about'); ?>" data-wow-duration="0.2s" data-wow-delay="0.2s" data-animate="<?php animationHeader('about'); ?>" >
                     <div class="awe-header">
                         <h2 class="<?php headerStyle('about') ?>"><?php the_title(); ?></h2>
@@ -42,14 +50,6 @@
                     display:none"'; ?>><?php echo $customize['about']['footer']['button']['text'] ?></a>
                 <?php endif; ?>
                 </div>
-                <!-- Image Mobile -->
-                <?php 
-                if ( has_post_thumbnail() ) { 
-                    echo '<div class="about-img">';
-                    the_post_thumbnail();
-                    echo '</div>';
-                } 
-                ?>
             <?php 
                 } // end while
                 wp_reset_query(); 
