@@ -25,7 +25,7 @@
                                 <!-- Item -->
                                 <div class="js-content-item <?php hasSlider('skill') ?> wow <?php animationContent('skill'); ?>" data-animate="<?php animationContent('skill'); ?>">
                                     <div class="item">
-                                        <div class="chart" data-percent="<?php echo $value['pro'] ?>" data-color="<?php skillColor(); ?>">
+                                        <div class="chart" data-percent="<?php echo $value['pro'] ?>" data-color="#fdbf76">
                                             <span class="percent"></span>
                                         </div>
                                         <h2><?php echo $value['name']; ?></h2>

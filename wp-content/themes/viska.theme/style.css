@@ -1,5 +1,5 @@
 /*
-Theme Name: Viska
+Theme Name: 301 creativa studio
 Version: 1.9
 Description: <strong>A business, portfolio and blog theme. It's created to help you make your site easily base on the powerful customize of WordPress. Designed & Developed by AweThemes</strong> - <a href="http://www.awethemes.com">www.awethemes.com</a>.
 Author: Awethemes
@@ -57,7 +57,7 @@ Text Domain: AweFramework
     border-left-color: #06717c;
 }
 
-#work #filters ul li.select-filter a, #work #filters ul li:hover a, #twitter .item p span, #twitter .item h2, #owl-news .item h2 a:hover, #owl-news .item ul li.wish .fa, #testimonial .item h2, #menu-top li a:hover, #menu-top li.current-page-item a, .menu-nav > li:hover > a, .menu-nav > li.current-page-item > a, .menu-nav .sub-menu .current-page-item a, .menu-nav .sub-menu li:hover a, .blog-title ul li a, #ajaxpage h4, .blog-item h2 a span, .widget_categories ul li a:hover, .widget_recent_entries ul li a:hover, .widget_recent_comments ul li a:hover, .widget_archive ul li a:hover, .widget_meta ul li a:hover, .widget_categories ul li a:hover, .awe-teams .content .awe-icon:hover, #owl-twitter .owl-item .item h2 a, .edit-link a, #commentform .controls > a, .date-comment .comment-edit-link, .comment-respond .comment-reply-title small a, .footer p a, #closeProject a:hover .icon, .process .item:hover .awe-icon, #process .item:hover .hr:after, .blog-title h2 a:hover, #nextProject .fa:hover, #prevProject .fa:hover, #process .item:hover .icon, #process .item:hover h2, #contact .contact-info div p b a:hover {
+#work #filters ul li.select-filter a, #work #filters ul li:hover a, #twitter .item p span, #twitter .item h2, #owl-news .item h2 a:hover, #owl-news .item ul li.wish .fa, #testimonial .item h2, #menu-top li a:hover, #menu-top li.current-page-item a, .menu-nav > li:hover > a, .menu-nav > li.current-page-item > a, .menu-nav .sub-menu .current-page-item a, .menu-nav .sub-menu li:hover a, .blog-title ul li a, #ajaxpage h4, .blog-item h2 a span, .widget_categories ul li a:hover, .widget_recent_entries ul li a:hover, .widget_recent_comments ul li a:hover, .widget_archive ul li a:hover, .widget_meta ul li a:hover, .widget_categories ul li a:hover, .awe-teams .content .awe-icon:hover, #owl-twitter .owl-item .item h2 a, .edit-link a, #commentform .controls > a, .date-comment .comment-edit-link, .comment-respond .comment-reply-title small a, .footer p a, #closeProject a:hover .icon, .process .item:hover .awe-icon, #process .item:hover .hr:after, .blog-title h2 a:hover, #nextProject .fa:hover, #prevProject .fa:hover, #process .item:hover .icon, #process .item:hover h2, #contact .contact-info div p b a:hover, .nextProject .awe-icon:hover, .prevProject .awe-icon:hover {
     color: #06717c;
 }
 
@@ -77,7 +77,7 @@ Text Domain: AweFramework
     background-color: #4ca799
 }
 
-#content-sort .awe-section.awe-parallax.skill  .awe-header h2, #content-sort .awe-section.awe-parallax.skill p {
+#content-sort .awe-section.awe-parallax.skill  .awe-header h2, #content-sort .awe-section.awe-parallax.skill p, #content-sort .awe-section.awe-parallax.news .awe-header h2, #content-sort .awe-section.awe-parallax.news p, .nextProject .awe-icon:hover, .prevProject .awe-icon:hover {
     color: #fff;
 }
 
@@ -149,6 +149,10 @@ Text Domain: AweFramework
     height: 128px;
     padding-top: 25px;
     background: linear-gradient(#42a598,#219390);
+}
+
+#work-wrap .work-item .caption {
+    background: linear-gradient(rgba(139, 203, 183, 0.9),rgba(33, 147, 144, 0.9));
 }
 
 #plans .item .price:after, #plans .item .price:before {
