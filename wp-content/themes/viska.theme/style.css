@@ -23,6 +23,11 @@ Text Domain: AweFramework
 * want to consider to add it to the designated CSS option field in your themes backend at: Theme Options->Styling
 */
 
+#preloader {
+    background-image: url(assets/images/font-preload.jpg);
+    background-size: cover;
+}
+
 #preloader .circle-ef {
     /*border-radius: 0;
     -webkit-animation: inherit;
@@ -36,8 +41,23 @@ Text Domain: AweFramework
     top: 50px;
 }
 
+#preloader .inner .image {
+    height: 117%;
+}
+
+#preloader .inner .img2 {
+    animation: none;
+    -webkit-animation: none;
+    width: 140px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+}
+
 #preloader .inner {
-    width: 200px;
+    width: 240px;
 }
 /* Color general */
 
@@ -55,6 +75,12 @@ Text Domain: AweFramework
 
 #preloader .circle-ef {
     border-left-color: #06717c;
+    border-radius: 0;
+    -webkit-animation: cube-ef 1s linear infinite;
+    -moz-animation: cube-ef 1s linear infinite;
+    animation: cube-ef 1s linear infinite;
+    transform: rotate(45deg);
+    border-width: 4px;
 }
 
 #work #filters ul li.select-filter a, #work #filters ul li:hover a, #twitter .item p span, #twitter .item h2, #owl-news .item h2 a:hover, #owl-news .item ul li.wish .fa, #testimonial .item h2, #menu-top li a:hover, #menu-top li.current-page-item a, .menu-nav > li:hover > a, .menu-nav > li.current-page-item > a, .menu-nav .sub-menu .current-page-item a, .menu-nav .sub-menu li:hover a, .blog-title ul li a, #ajaxpage h4, .blog-item h2 a span, .widget_categories ul li a:hover, .widget_recent_entries ul li a:hover, .widget_recent_comments ul li a:hover, .widget_archive ul li a:hover, .widget_meta ul li a:hover, .widget_categories ul li a:hover, .awe-teams .content .awe-icon:hover, #owl-twitter .owl-item .item h2 a, .edit-link a, #commentform .controls > a, .date-comment .comment-edit-link, .comment-respond .comment-reply-title small a, .footer p a, #closeProject a:hover .icon, .process .item:hover .awe-icon, #process .item:hover .hr:after, .blog-title h2 a:hover, #nextProject .fa:hover, #prevProject .fa:hover, #process .item:hover .icon, #process .item:hover h2, #contact .contact-info div p b a:hover, .nextProject .awe-icon:hover, .prevProject .awe-icon:hover {
