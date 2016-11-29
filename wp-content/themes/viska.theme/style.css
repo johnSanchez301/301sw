@@ -231,11 +231,13 @@ Text Domain: AweFramework
 #plans .item .price:before {
     background: url(assets/images/part-price-top.png) no-repeat;
     top: 0;
+    background-size: cover;
 }
 
 #plans .item .price:after {
     background: url(assets/images/part-price-bottom.png) no-repeat;
     bottom: 0;
+    background-size: cover;
 }
 
 
@@ -307,4 +309,24 @@ Text Domain: AweFramework
 
 .js-header.col-sm-7.wow.fadeInUp.animated, .js-awe-get-items.col-sm-7.title.wow.fadeInhalf-text.animated {
     margin-left: 40%;
+}
+
+@media screen and (max-width: 768px){
+    #about .about-img:before {
+        display: none;
+    }
+    
+    #about .about-img img {
+        left: inherit;
+        box-shadow: none;
+    }
+    
+    .js-header.col-sm-7.wow.fadeInUp.animated, .js-awe-get-items.col-sm-7.title.wow.fadeInhalf-text.animated {
+        margin-left: 1%;
+    }
+    
+    #about .about-img {
+        margin-bottom: 50px;
+    }
+
 }
