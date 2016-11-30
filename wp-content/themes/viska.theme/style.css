@@ -46,6 +46,7 @@ Text Domain: AweFramework
 }
 
 #preloader .inner .img2 {
+    z-index: 999999;
     animation: none;
     -webkit-animation: none;
     width: 140px;
@@ -335,6 +336,33 @@ Text Domain: AweFramework
 
 .js-header.col-sm-7.wow.fadeInUp.animated, .js-awe-get-items.col-sm-7.title.wow.fadeInhalf-text.animated {
     margin-left: 40%;
+}
+
+a.rep-video {
+    position: absolute;
+    top: 6%;
+    display: block;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.8);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.42);
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    color: #4ca799;
+    line-height: 42px;
+    font-size: 18px;
+}
+
+.pp_details .pp_social, .pp_details .pp_description {
+    display: none;
+}
+
+a.rep-video:hover {
+    background: rgba(255,255,255,1);
 }
 
 @media screen and (max-width: 768px){
