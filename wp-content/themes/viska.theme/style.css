@@ -365,6 +365,28 @@ a.rep-video:hover {
     background: rgba(255,255,255,1);
 }
 
+div.pp_default .pp_top, div.pp_default .pp_bottom {
+    display: none;
+}
+
+div.pp_default .pp_content_container .pp_left, div.pp_default .pp_content_container .pp_right {
+    background: none;
+}
+
+div.pp_default .pp_content, div.light_rounded .pp_content {
+    background: transparent
+}
+
+div.pp_default .pp_description {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 8px;
+    text-transform: uppercase;
+    font-family: 'lato';
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
 @media screen and (max-width: 768px){
     #about .about-img:before {
         display: none;
