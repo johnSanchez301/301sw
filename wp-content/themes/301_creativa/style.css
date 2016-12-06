@@ -23,6 +23,19 @@ Text Domain: AweFramework
 * want to consider to add it to the designated CSS option field in your themes backend at: Theme Options->Styling
 */
 
+@font-face {
+  font-family: 'City';
+  src: url('assets/Wolf_in_the_City.woff') format('woff'); /* Modern browsers */
+}
+
+body {
+    color: #333;
+}
+
+h1, h2 {
+    font-family: City;
+}
+
 #preloader {
     background-image: url(assets/images/font-preload.jpg);
     background-size: cover;
@@ -125,12 +138,22 @@ Text Domain: AweFramework
 }
 
 .home-content .item h2 {
-    font-weight: 800;
     width: 70%;
-    font-size: 32px;
-    letter-spacing: 0.2rem;
+    font-size: 92px;
+    letter-spacing: 0.3rem;
     margin: 0 auto;
     position: relative;
+    line-height: 72px;
+    font-family: City;
+    font-weight: 500;
+}
+
+.home-content h3 {
+    font-family: City;
+    font-size: 50px;
+    line-height: 32px;
+    letter-spacing: 0.2rem;
+    font-weight: 100;
 }
 
 .home-content .item h2:before {
@@ -149,8 +172,21 @@ Text Domain: AweFramework
     z-index: -1;
 }
 
+.awe-header h2 {
+    text-transform: inherit;
+    font-size: 64px;
+    letter-spacing: 0.25rem;
+}
+
 .awe-header h2:before {
     background-color: #4ca799
+}
+
+.awe-section .awe-header p {
+    color: rgb(107, 107, 107);
+    font-weight: 100;
+    line-height: 1.2;
+    letter-spacing: 0.02rem;
 }
 
 #nav-left ul li a {
@@ -227,7 +263,8 @@ Text Domain: AweFramework
 /* Color services */
 
 #content-sort .awe-section.awe-parallax .awe-header h2 {
-    font-size: 34px;
+    font-size: 84px;
+    line-height: 71px;
 }
 
 #content-sort .awe-section.awe-parallax .awe-header h2, #content-sort .awe-section.awe-parallax p, #content-sort .awe-parallax .awe-services .item h2, #content-sort .awe-parallax .awe-services .item .awe-icon {
@@ -271,7 +308,15 @@ Text Domain: AweFramework
     background-size: cover;
 }
 
+.awe-skills .item h2, #process .item h2, #content-sort .awe-parallax .awe-services .item h2 {
+    font-family: 'Raleway';
+}
 
+.awe-header .title-big {
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: 0.6rem;
+}
 
 /* testimoniales */
 
@@ -424,6 +469,71 @@ div.pp_default .pp_description {
     height: 122px;
 }
 
+.error404 {
+    background: url(assets/images/error-font.jpg) no-repeat center;
+    background-size: 100%;
+}
+
+.error404 #page-wrap {
+    height: 100%;
+}
+
+.error404 #footer {
+    min-height: inherit;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.error404 #content-blog {
+    position: absolute;
+    background: transparent;
+    width: 50%;
+    height: 350px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+.error404 #content-blog h2 {
+    font-size: 90px;
+    line-height: 52px;
+    margin-bottom: 20px;
+}
+
+.error404 #content-blog .btn {
+    width: auto;
+    display: inline-block;
+    font-family: 'Raleway';
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 25px;
+    padding: 12px 20px;
+    float: right;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    background: transparent;
+    border: #444 solid 1px;
+    color: #444;
+    float: none;
+    border-radius: 0;
+}
+
+.error404 #content-blog .btn:hover {
+    background: #06717c;
+    color: #fff;
+}
+
+.error404 .image-logo {
+    margin-bottom: 10px;
+}
+
 @media screen and (max-width: 768px){
     #about .about-img:before {
         display: none;
@@ -440,6 +550,14 @@ div.pp_default .pp_description {
     
     #about .about-img {
         margin-bottom: 50px;
+    }
+    
+    .error404 {
+        background-size: cover;
+    }
+    
+    .error404 #content-blog {
+        width: 70%;
     }
 
 }

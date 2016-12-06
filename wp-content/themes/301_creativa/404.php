@@ -7,7 +7,6 @@ if($customize == ''){
 $is_customize_mode =  (has_action( 'customize_controls_init' )) ? true : false;
 ?>
 <?php get_header();?>
-<?php get_template_part('section-introduction');?>
     <!--=============== wrapper ===============-->
 <?php 
     $main_class = layout_class('main');
@@ -19,9 +18,13 @@ $is_customize_mode =  (has_action( 'customize_controls_init' )) ? true : false;
         <div id="content-blog">
             <div class="container">
                 <div class="row">
-                    <h3>me perdí</h3>
-                    <p class="lead blog-description">Hay direcciónes que no me cuadro en la ubicación, pero me ví un grafiti lo más de bonito</p>
+                    <div class="image-logo">
+                        <img src="<?php echo home_url() ?>/wp-content/uploads/2016/11/logo-black.png" alt="">
+                    </div>
+                    <h2>¡Ohh, ohhh me perdí!</h2>
+                    <p class="lead blog-description">Existen direcciones como esta, fuera de mi GPS. Te recomendamos continuar buscando allá afuera.</p>
                     <div class="separator"></div>
+                    <a href="<?php echo home_url() ?>" class="btn">volver al inicio</a>
                 </div> 
             </div>    
         </div>
