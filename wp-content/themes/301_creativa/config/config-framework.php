@@ -192,7 +192,7 @@ $generate_custom_color = array(
     'color_default'     =>  '#ff2b42',
     'rgba_default'      =>  'rgba(225, 43, 66, 0.85)',
     'file_source'       =>  'colors/red.css',
-    'file_name'         =>  'colors/301-color-css.css',
+    'file_name'         =>  'colors/viska-color-css.css',
     //end custom color file
 );
 /**
@@ -203,22 +203,22 @@ $default_config = array(
     "support"               =>  array(
         'skype'                 =>  array('theocean87','kidiwp','dangy1989','nguyen_dttn'),
         'video'                 =>  '01Avrz-Q8ks',
-        'doc'                   =>  'http://awethemes.com/docs/301',
-        'forum'                 =>  'http://awethemes.com/forum/theme-support/301',
+        'doc'                   =>  'http://awethemes.com/docs/viska',
+        'forum'                 =>  'http://awethemes.com/forum/theme-support/viska',
     ),
     "generate_custom_color" =>  $generate_custom_color,
     "frame_options"         =>  $frame_configs,
     "theme_options_name"    =>  apply_filters('awe_get_option_by_lang',THEME_OPTIONS_NAME),
     "theme_new_configs"     =>  $theme_new_configs,
     "extra_options"         =>  $options_extra,
-    "extra_tab_name"        =>  "301 Settings",
+    "extra_tab_name"        =>  "Viska Settings",
     "extra_tpl"             =>  dirname( __FILE__ )."/extra_tpl.php",
     "extra_css"             =>  get_template_directory_uri()."/assets/css/extra.css",
     "extra_js"              =>  get_template_directory_uri()."/assets/js/extra".$min.".js",
     // "spectrum_js"           =>  get_template_directory_uri().""
     "menu_name"             =>  array("Main Menu", "Top Menu","Left Menu"),
     "menu_id"               =>  'main-menu',
-    "contact_form_name"     =>  "301 Contact",
+    "contact_form_name"     =>  "Viska Contact",
     "contact_option"        =>  "form",
     // "profile_name"          =>  "Jonathan Doe",
     // "profile_option"        =>  "profile",

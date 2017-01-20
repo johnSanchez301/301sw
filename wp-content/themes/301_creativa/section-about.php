@@ -4,7 +4,8 @@
     if($customize['about']['show'] || $is_customize_mode): 
 ?>  
     <section id="about" class="awe-section about" <?php display_background_css('about'); ?> >
-        <div class="container">
+        <div class="before"></div>
+		<div class="container">
             <div class="row">
                 <!-- The title -->
                 <?php

@@ -11,6 +11,7 @@ if($customize == ''){
     $customize = $options_extra;
 }
 $is_customize_mode =  (has_action( 'customize_controls_init' )) ? true : false;
+
 ?>
 <?php 
 get_header();
@@ -31,7 +32,13 @@ get_header();
     query_posts('post_type=post&posts_per_page='.$post_per_page.'&showposts='.$post_per_page.'&paged='.$paged );
 ?>
 <!-- Blog -->
+   
     <div id="main">
+        <div class="title-blog">
+            <div class="container">
+               <h3>Vivimos<span>las marcas</span></h3>
+            </div>
+        </div>
         <!-- Content Blog -->
             <div id="content-blog">
                 <div class="container">

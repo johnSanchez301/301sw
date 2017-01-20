@@ -1213,9 +1213,9 @@ Class AWEThemeSettings extends AweFramework
         $title .= get_bloginfo( 'name', 'display' );
 
         // Add the site description for the home/front page.
-        $site_description = get_bloginfo( 'description', 'display' );
+        //$site_description = get_bloginfo( 'description', 'display' );
         if ( $site_description && ( is_home() || is_front_page() ) ) {
-            $title = "$title $sep $site_description";
+            $title = "$title";
         }
 
         // Add a page number if necessary.

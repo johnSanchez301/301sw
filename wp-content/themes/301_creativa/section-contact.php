@@ -14,20 +14,24 @@
                         <div class="col-sm-4 wow <?php animationContent('address') ?>" data-wow-delay="0.3s" data-animate="<?php animationContent('address'); ?>">
                             <div class="contact-info">
                                 <h2 class="js-studio"><?php echo $customize['address']['content']['studio']; ?></h2>
-                                <div>
+                                <div class="hidden">
                                     <i class="awe-icon fa fa-map-marker"></i>
                                     <p class="js-address">
                                         <?php echo $customize['address']['content']['address']; ?>
                                     </p>
                                 </div>
                                 <div>
-                                    <i class="awe-icon fa fa-envelope"></i>
+                                    <div class="icon-contact contac-mail">
+                                        <img src="/wp-content/themes/301_creativa/assets/images/mensaje.svg" alt="">
+                                    </div>
                                     <p>
                                         <b class="js-email"><a href="mailto:<?php echo $customize['address']['content']['email'] ?>"> <?php echo $customize['address']['content']['email'] ?></a></b>
                                     </p>
                                 </div>
                                 <div>
-                                    <i class="awe-icon fa fa-phone"></i>
+                                    <div class="icon-contact contac-phone">
+                                        <img src="/wp-content/themes/301_creativa/assets/images/telefono.svg" alt="">
+                                    </div>
                                     <p>
                                         <b class="js-phone"><?php echo $customize['address']['content']['phone'] ?></b>
                                     </p>

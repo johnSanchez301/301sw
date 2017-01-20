@@ -81,7 +81,7 @@
                         ?>
                         <div class="js-content-item <?php hasSlider('team') ?> <?php joinTeamWow(); ?> bounceIn" data-wow-duration="1s" data-wow-delay="1.4s" <?php joinTeam() ?>>
                             <div  class="join-team">
-                                <a href="mailto:301@301creativastudio.com?Subject=Quiero%20ser%20parte%20de%20su%20equipo" "class="content">
+                                <a href="#contact" "class="content">
                                     <img class="join-team-logo" src="<?php echo $join_image ?>" alt="team logo">
                                     <h2><?php echo "sé parte"; ?></h2>
                                     <p class="add-join-team">

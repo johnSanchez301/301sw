@@ -27,7 +27,6 @@
         </div>
         <!-- Home media Image, Video, Slide -->
         <?php background_show('intro_bg_data'); ?>    
-        <a href="#about" class="scroll-down"></a>
         <?php display_overlay('intro_bg_data'); ?>
     </div>
     <!-- End Header -->
@@ -39,12 +38,14 @@
 
             <!-- Button Menu -->
             <?php if(has_nav_menu( 'main_menu' )) : ?>
-                
-                <span id="button-menu">
-                    <i class="icon"></i>
-                    <i class="icon"></i>
-                    <i class="icon"></i>
-                </span>
+                <div class="dev-menu">
+					<p>Menú</p>
+					<span id="button-menu">
+						<i class="icon"></i>
+						<i class="icon"></i>
+						<i class="icon"></i>
+					</span>
+				</div>
                 
             <?php endif; ?>
             <?php do_action('awe_lang_bar'); ?>

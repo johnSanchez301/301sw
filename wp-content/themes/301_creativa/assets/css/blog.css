@@ -1,0 +1,83 @@
+body.blog #blog-banner {
+    background: url(http://www.301creativastudio.com/wp-content/uploads/2017/01/header.jpg) !important;
+    background-size: cover;
+    background-position: bottom center!important;
+}
+
+body.blog #page-wrap .title-blog h3 {
+    width:430px;
+    margin: 0 auto;
+    color: #58595B;
+    font-size: 3em;
+    font-family: futura-bt;
+    text-align: left;
+    background: #fff;
+    letter-spacing: 0.5rem;
+}
+
+body.blog #page-wrap .title-blog h3:before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 62%;
+    background: #58595B;
+    float: right;
+    margin-top: 18px;
+}
+
+body.blog #page-wrap .title-blog span {
+    color: #079ab7;
+    font-family: JaneAust;
+    font-size: 2.3em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    text-align: left;
+    line-height: 5.3rem;
+    display: block;
+    letter-spacing: 0;
+    padding-left: 1em;
+    position: relative;
+}
+
+body.blog #page-wrap .title-blog span:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 15%;
+    background: #58595B;
+    left:0;
+    margin-top: 28px;
+}
+
+body.blog .container .blog-item:nth-child(1) .blog-image {
+    height: 400px;
+    width: 96%;
+    margin: 0 auto 30px auto;
+    position: relative;
+}
+
+
+body.blog .container .blog-image a {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+body.blog .container .blog-item:nth-child(1) .blog-image:before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 104%;
+    height: 90%;
+    border: #58595B solid 1px;
+    top: 0;
+    left: -2%;
+    right: 0;
+    bottom: 0;
+}

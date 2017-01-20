@@ -70,7 +70,7 @@
 
 			//Update the positions on resize too
 			this.$win.on('resize.onePageNav', $.proxy(this.getPositions, this));
-
+			
 			return this;
 		},
 
@@ -85,6 +85,8 @@
 
 			self.$win.on('scroll.onePageNav', function() {
 				self.didScroll = true;
+				//Establecer animaciones de elementos
+				setAnimatedElement();
 			});
 
 			self.t = setInterval(function() {
@@ -115,9 +117,8 @@
 			var $target;
 
 			self.$nav.each(function() {
-				linkHref = self.getHash($(this));
+				linkHref = getValueInglish(self.getHash($(this)), false);
 				$target = $('#' + linkHref);
-
 				if($target.length) {
 					topPos = $target.offset().top;
 					self.sections[linkHref] = Math.round(topPos);
@@ -142,8 +143,9 @@
 			var self = this;
 			var $link = $(e.currentTarget);
 			var $parent = $link.parent();
-			var newLoc = '#' + self.getHash($link);
-
+			var newLocIng = self.getHash($link);
+			var newLoc = '#' + getValueInglish(newLocIng, false);			
+			
 			if(!$parent.hasClass(self.config.currentClass)) {
 				//Start callback
 				if(self.config.begin) {
@@ -160,7 +162,7 @@
 				self.scrollTo(newLoc, function() {
 					//Do we need to change the hash?
 					if(self.config.changeHash) {
-						window.location.hash = newLoc;
+						window.location.hash = newLocIng;
 					}
 
 					//Add the auto-adjust on scroll back in
@@ -178,13 +180,11 @@
 
 		scrollChange: function() {
 			var windowTop = this.$win.scrollTop();
-			var position = this.getSection(windowTop);
+			var position = getValueInglish(this.getSection(windowTop), true);
 			var $parent;
-
 			//If the position is set
 			if(position !== null) {
-				$parent = this.$elem.find('a[href$="#' + position + '"]').parent();
-
+				$parent = this.$elem.find('a[href$="#' + position + '"]').parent();				
 				//If it's not already the current section
 				if(!$parent.hasClass(this.config.currentClass)) {
 					//Change the highlighted nav item
@@ -200,7 +200,7 @@
 
 		scrollTo: function(target, callback) {
 			var offset = $(target).offset().top-50;
-
+console.log('emtra');
 			$('html, body').animate({
 				scrollTop: offset
 			}, this.config.scrollSpeed, this.config.easing, callback);
@@ -209,7 +209,7 @@
 		unbindInterval: function() {
 			clearInterval(this.t);
 			this.$win.unbind('scroll.onePageNav');
-		}
+		},
 	};
 
 	OnePageNav.defaults = OnePageNav.prototype.defaults;
@@ -220,4 +220,76 @@
 		});
 	};
 
+	getValueInglish = function(value, espanol)
+	{
+		//Codigo de rod para el menu en espanol
+		var newLoc = value;
+		if(!espanol)
+		{
+			switch(value) {
+				case 'inicio': newLoc = 'home'; break;
+				case 'lo-que-somos': newLoc = 'about'; break;
+				case 'lo-que-hacemos': newLoc = 'services'; break;
+				case 'equipo-creativo': newLoc = 'team'; break;
+				case 'estadisticas': newLoc = 'skill'; break;
+				case 'como-lo-hacemos': newLoc = 'process'; break;
+				case 'nuestras-marcas': newLoc = 'client'; break;
+				case 'contacto': newLoc = 'contact'; break;
+			}
+		}
+		else
+		{
+			switch(value) {
+				case 'home': newLoc = 'inicio'; break;
+				case 'about': newLoc = 'lo-que-somos'; break;
+				case 'services': newLoc = 'lo-que-hacemos'; break;
+				case 'team': newLoc = 'equipo-creativo'; break;
+				case 'skill': newLoc = 'estadisticas'; break;
+				case 'process': newLoc = 'como-lo-hacemos'; break;
+				case 'client': newLoc = 'nuestras-marcas'; break;
+				case 'contact': newLoc = 'contacto'; break;
+			}
+		}
+		return newLoc;
+	};
+	
+	setAnimatedElement = function()
+	{
+		if(jQuery('#menu-item-222').is('.current-page-item'))
+		{
+			setTimeout(
+				function(){
+					var b = jQuery('#about .before');
+					if(!b.is('.ok'))
+					{
+					    var l = jQuery('#about h2').offset().left - 300;
+						b.css({'left':'-45em', 'opacity': '1'}).animate({'left':l}, 1000).addClass('ok');
+					}
+			}, 500);
+		}
+		
+		if(jQuery('#menu-item-230').is('.current-page-item'))
+		{
+			setTimeout(function(){
+				var b = jQuery('#services .before');
+				if(!b.is('.ok'))
+					var l = jQuery('#services .owl-item').first().offset().left - 190;
+					b.css({'opacity': '1'}).animate({'left':l}, 1000).addClass('ok'); 
+			}, 1800);
+		}
+		
+		if(jQuery('#menu-item-226').is('.current-page-item'))
+		{
+			setTimeout(function(){
+				var b = jQuery('#process .before');
+				if(!b.is('.ok'))
+					b.animate({'width':'43em'}, 1000).addClass('ok'); 
+			}, 500);
+		}
+	}
+	
+	jQuery.each(jQuery('#menu-left-menu a'), function(x,y){ 
+		jQuery(y).attr('title', jQuery(y).html());
+	});
+	
 })( jQuery, window , document );

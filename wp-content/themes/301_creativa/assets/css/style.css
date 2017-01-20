@@ -65,7 +65,7 @@ ol, ul {
 body {
     line-height: 1;
     font-size: 62.5%;
-    font-family: 'lato';
+    font-family: 'futura';
     color: #000;
 }
 body img{
@@ -83,12 +83,16 @@ body img{
 }
 #page-wrap{
     position: relative;
+    overflow: hidden;
+	background-color: #fff;
 }
 html, body {
     height: 100%;
+	background:#ededed;
+    margin: 0 auto;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Raleway';
+    font-family: 'futura-bt';
 }
 
 /* Trasition time */
@@ -133,145 +137,22 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     margin: auto;
     left: 0; right: 0; top: 0; bottom: 0;
-    background-color: #222;
+    background-color: #fff;
     z-index: 999999999999;
     text-align: center;
 }
 #preloader .inner {
     position: absolute;
-    width: 150px; height: 266px;
+    width: 150px;
+    height: 150px;
     overflow: hidden;
     margin: auto;
-    top: 50%;
-    left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 9;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
+    bottom: 0;
 }
-#preloader .inner .image {
-    overflow: hidden;
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 99%;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-}
-#preloader .inner .img2 {
-    position: absolute;
-    top: 30px; left: -27px;
-    z-index: -1;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-animation: preloader-ef 10s ease infinite;
-    -moz-animation: preloader-ef 10s ease infinite;
-    animation: preloader-ef 10s ease infinite;
-}
-@-webkit-keyframes preloader-ef {
-    0% {top: 30px; left: -27px;}
-    10% {top: 50px; left: 27px;}
-    20% {top: -40px; left: -15px;}
-    30% {top: 40px; left: -20px; -webkit-transform: scale(1.3);}
-    40% {top: 60px; left: 0px;}
-    50% {top: 30px; left: -27px;}
-    60% {top: 45px; left: 0px;}
-    70% {top: -20px; left: 10px;}
-    80% {top: 0px; left: -22px;}
-    90% {top: 10px; left: 20px; -webkit-transform: scale(1.3);}
-    100% {top: 30px; left: -27px;}
-}
-@-moz-keyframes preloader-ef {
-    0% {top: 30px; left: -27px;}
-    10% {top: 50px; left: 27px;}
-    20% {top: -40px; left: -15px;}
-    30% {top: 40px; left: -20px; -moz-transform: scale(1.3);}
-    40% {top: 60px; left: 0px;}
-    50% {top: 30px; left: -27px;}
-    60% {top: 45px; left: 0px;}
-    70% {top: -20px; left: 10px;}
-    80% {top: 0px; left: -22px;}
-    90% {top: 10px; left: 20px; -moz-transform: scale(1.3);}
-    100% {top: 30px; left: -27px;}
-}
-@keyframes preloader-ef {
-    0% {top: 30px; left: -27px;}
-    10% {top: 50px; left: 27px;}
-    20% {top: -40px; left: -15px;}
-    30% {top: 40px; left: -20px; transform: scale(1.3);}
-    40% {top: 60px; left: 0px;}
-    50% {top: 30px; left: -27px;}
-    60% {top: 45px; left: 0px;}
-    70% {top: -20px; left: 10px;}
-    80% {top: 0px; left: -22px;}
-    90% {top: 10px; left: 20px; transform: scale(1.3);}
-    100% {top: 30px; left: -27px;}
-}
-#preloader .circle-ef {
-    width: 130px; height: 130px;
-    position: absolute;
-    border: 2px solid #303030;
-    border-radius: 50%;
-    margin: auto;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    left: 0; right: 0; top: 0; bottom: 23px;
-    z-index: 99;
-    -webkit-animation: circle-ef 1s linear infinite;
-    -moz-animation: circle-ef 1s linear infinite;
-    animation: circle-ef 1s linear infinite;
-}/*
-@-webkit-keyframes circle-ef {
-    100% {-webkit-transform: rotate(360deg)}
-}
-@-moz-keyframes circle-ef {
-    100% {-moz-transform: rotate(360deg)}
-}
-@keyframes circle-ef {
-    100% {transform: rotate(360deg)}
-}*/
-
-@-webkit-keyframes cube-ef {
-    100% {-webkit-transform: scale(0.5) rotate(45deg); opacity:0}
-}
-@-moz-keyframes cube-ef {
-    100% {-moz-transform: scale(0.5) rotate(45deg); opacity:0}
-}
-@keyframes cube-ef {
-    100% {transform: scale(0.5) rotate(45deg); opacity:0}
-}
-#preloader .circle-ef:after {
-    content: '';
-    display: block;
-    position: absolute;
-
-}
-.preloader-ef {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all 1s linear;
-    -moz-transition: all 1s linear;
-    -ms-transition: all 1s linear;
-    -o-transition: all 1s linear;
-    transition: all 1s linear;
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-}
-#preloader.preloader-ef .inner .img2,
-#preloader.preloader-ef .inner .circle-ef {
-    display: none;
-    -webkit-animation: none;
-    -moz-animation: none;
-    animation: none;
-}
-#preloader.preloader-ef .image {
-    background: #d0d0d0;
-}
-
 
 /* 3.   Custom scroll
 --------------------------------------------------------------------------------*/
@@ -549,8 +430,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 30px;
 }
     
-
-    
 #header{
     height: 75px;
     top: 45px;
@@ -558,6 +437,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     z-index: 999;
 }
+
 #header .container {
     position: relative;
 }
@@ -759,7 +639,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     left: 0; 
     right: 0;
-    top: 50%;
+    top: 60%;
     z-index: 9;
     text-align: center;
 
@@ -857,22 +737,6 @@ h1, h2, h3, h4, h5, h6 {
         .awe-header.center h2 {
             display: inline-block;
         }
-
-        .awe-header h2:before {
-            content: '';
-            width: 58px;
-            height: 4px;
-            background-color: #000;
-            position: absolute;
-            display: block;
-            left:0;
-        }
-        .awe-parallax .awe-header h2:before {
-            background-color: #fff;
-        }
-        .awe-header .line-top:before {
-            top: -15px;
-        }
         
         /* Heading (line-bottom) */
         .awe-header .line-bottom {
@@ -946,7 +810,7 @@ h1, h2, h3, h4, h5, h6 {
     --------------------------------------------------------------------------------*/
     .awe-section p {
         color: rgb(105, 105, 105);
-        font-size: 16px;
+        font-size: 18px;
         line-height: 2;
         font-weight: 300;
     }
@@ -1019,10 +883,10 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 9;
 }
 #about .about-img img {
-    width: 100%;
+	width: 100%;
     max-width: 386px;
-    position:absolute;
-    right: 15px;
+    position: absolute;
+    left: -31em;
 }
 .awe-section.about {
     padding:  180px 0 150px;
@@ -1037,7 +901,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------------------------*/
 #services{
     min-height: 680px;
-    /*background-image: url('../images/parallax/image-parallax-2.jpg');*/
+	z-index:2;
 }
 .awe-section.services {
     padding: 150px 0 55px;
@@ -1071,6 +935,7 @@ h1, h2, h3, h4, h5, h6 {
 }
     .awe-parallax .awe-services  .item h2 {
         color: #fff;
+		text-shadow: 0 0 3px #856a18;
     }
 .awe-services  .item p {
     margin-top: 20px;
@@ -1094,15 +959,22 @@ h1, h2, h3, h4, h5, h6 {
 .awe-funfacts .item p{
     position: relative;
     display: inline-block;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: futura-bt;
+    padding: 0;
+    margin: 0;
+    font-weight: 900;
+    line-height: 1;
+	text-shadow: 0 0 10px #3a1c1e;
 }
-.awe-funfacts .item  .countup{
+.awe-funfacts .item {
     font-size: 80px;
     font-weight: 900;
     line-height: 1.2;
-    color: #000;
+    color: #fff;
 }
 .awe-funfacts .item .plus {
-    color: rgb(0, 0, 0);
     font-size: 48px;
     font-weight: 900;
     position: absolute;
@@ -1114,6 +986,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     margin-top: 20px;
     font-weight: 900;
+    text-shadow: 0 0 3px #634247;
 }
 
 .awe-funfacts .color-white .countup,
@@ -1138,12 +1011,7 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid #dfdfdf;
     padding-bottom: 18px;
     text-align: center;
-
-    -webkit-transition: border-color .4s linear;
-    -moz-transition: border-color .4s linear;
-    -ms-transition: border-color .4s linear;
-    -o-transition: border-color .4s linear;
-    transition: border-color .4s linear;
+	border: 0 !important;
 }
 
 
@@ -1156,28 +1024,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 .awe-teams .item .hover-overlay {
     position: absolute;
-    top: -100%;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     padding: 20px;
-    background-color: rgba(225, 43, 66, 0.85);
     overflow: hidden;
+	opacity: 0;
 
-    webkit-transition: all .4s cubic-bezier(0,1,0.5,0.98);
-    -moz-transition: all .4s cubic-bezier(0,1,0.5,0.98);
-    -ms-transition: all .4s cubic-bezier(0,1,0.5,0.98);
-    -o-transition: all .4s cubic-bezier(0,1,0.5,0.98);
-    transition: all .4s cubic-bezier(0,1,0.5,0.98);
+    webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
 }
 .awe-teams .item .hover-overlay p{
     margin-top: 60px;
-    color: #fff;
-    font-size: 14px;
-    line-height: 1.8;
+    color: #000;
+    font-size: 17px;
+    line-height: 1.2;
     font-weight: 400;
     text-align: left;
     margin-bottom: 7px;
+    font-family: futura-bt;
+    text-shadow: 0 0 1px #e8dddd;
 }
 .awe-teams .content .awe-icon {
     display: block;
@@ -1207,10 +1077,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .awe-teams .item h3 {
     color: #222;
-    font-weight: 900;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-top: 30px;
+    font-weight: lighter;
+    font-size: 3em;
+    text-transform: none;
+    line-height: 2;
+    font-family: JaneAust;
 }
 .awe-teams .item span {
     font-size: 12px;
@@ -1245,13 +1116,34 @@ h1, h2, h3, h4, h5, h6 {
 .awe-teams .join-team .add-join-team{
     margin-top: 45px;
 }
-    .awe-teams .item:hover{
-        border-bottom:1px solid #ff2b42;
-    }
     .awe-teams .item:hover .img .content{
-        top: 0;
+        opacity: 1;
     }
 
+#team .js-content-item .img .content
+{
+	background-size:contain;
+}
+
+#team .js-content-item:nth-child(1) .img .content {
+	background-image: url(/wp-content/themes/301_creativa/assets/images/marco-hover.jpg);
+}
+
+#team .js-content-item:nth-child(2) .img .content {
+	background-image: url(/wp-content/themes/301_creativa/assets/images/rod-hover.jpg);
+}
+
+#team .js-content-item:nth-child(3) .img .content {
+	background-image: url(/wp-content/themes/301_creativa/assets/images/andres-hover.jpg);
+}
+
+#team .js-content-item:nth-child(4) .img .content {
+	background-image: url(/wp-content/themes/301_creativa/assets/images/lina-hover.jpg);
+}
+
+#team .js-content-item:nth-child(5) .img .content {
+	background-image: url(/wp-content/themes/301_creativa/assets/images/john-hover.jpg);
+}
 
 /* 7.   Skill section
 --------------------------------------------------------------------------------*/
@@ -1298,6 +1190,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     margin-top: 25px;
     letter-spacing: 1px;
+	text-shadow: 0 0 3px #074562;
 }
 
 
@@ -1792,19 +1685,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 13.   Process section
 --------------------------------------------------------------------------------*/
-    .awe-process {
-        margin-top: 80px;
-        margin-bottom: 50px;
-    }
     .awe-section.process {
-        padding: 120px 0 95px;
+        padding: 150px 0;
     }
     .awe-process .item{
         text-align: center;
         cursor: pointer;
         position: relative;
-        padding-top: 48px;
-        margin-top: 30px;
     }
     .awe-process .item .awe-image{
         margin-top: -48px;
@@ -1841,24 +1728,25 @@ h1, h2, h3, h4, h5, h6 {
     }
       
     .awe-process .item h2 {
-        font-size: 1.6em;
-        text-transform: uppercase;
-        font-weight: 900;
-        margin-top: 20px;
-        color: #222;
-
-        -webkit-transition: all .3s linear;
-        -moz-transition: all .3s linear;
-        -ms-transition: all .3s linear;
-        -o-transition: all .3s linear;
-        transition: all .3s linear;
+		font-size: 4em;
+		text-transform: none;
+		font-weight: lighter;
+		margin-top: 20px;
+		color: #222;
+		-webkit-transition: all .3s linear;
+		-moz-transition: all .3s linear;
+		-ms-transition: all .3s linear;
+		-o-transition: all .3s linear;
+		transition: all .3s linear;
+		color: #069bb8;
+		font-family: JaneAust
     }
     .awe-process .item p {
         border:1px solid #a5a5a5;
         padding:40px 17px;
         min-height: 185px;
         margin-top: 22px;
-        font: 300 1.6em/1.8em 'Lato';
+        font: 300 1.6em/1.8em 'futura';
         color: #696969;
 
         -webkit-transition: all .3s linear;
@@ -2022,7 +1910,7 @@ h1, h2, h3, h4, h5, h6 {
 .awe-pricing .item .price p {
     display: inline-block;
     color: #fff;
-    font:900 7em 'Lato';
+    font:900 7em 'futura';
     height: 100px;
     position: relative;
     line-height: 100px;
@@ -2051,7 +1939,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px 10px;
     color: #696969;
     letter-spacing: 1px;
-    font: 300 1.6em/1.4em 'Lato';
+    font: 300 1.6em/1.4em 'futura';
 }
 .awe-pricing .item .sign-up{
     height: 60px;
@@ -2208,7 +2096,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin-top: 22px;
     padding-bottom: 15px;
-    font: 300 1.6em/1.8em 'Lato';
+    font: 300 1.6em/1.8em 'futura';
 }
 .awe-news .item ul{
     font-size: 0;
@@ -2217,7 +2105,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .awe-news .item ul li{
     display: inline-block;
-    font: 300 14px 'Lato';
+    font: 300 14px 'futura';
     margin-top: 15px;
     color: #000;
     float: left;
@@ -2410,11 +2298,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .awe-contact .contact-info div p{
     color: #222;
-    font: 300 1.6em/1.6em 'Lato';
+    font: 300 1.6em/1.6em 'futura';
 }
 .awe-contact .contact-info div p b{
-    font: bold 16px/45px 'Lato';
+    font: bold 23px/46px 'futura';
     color: #222;
+	padding-left: 1em;
 }
 .awe-contact .contact-info div p b a{
     color: #222;
@@ -2456,13 +2345,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 20.  Footer
 --------------------------------------------------------------------------------*/
-
-#footer{
-    min-height: 245px;
-    background-color: #222222;
-    position: relative;
-    text-align: center;
-}
 .footer #scroll-top{
     position: absolute;
     width: 46px;
@@ -2481,10 +2363,12 @@ h1, h2, h3, h4, h5, h6 {
     -o-transition: all .3s linear;
     transition: all .3s linear;
     cursor: pointer;
+	z-index: 30;
 }
 
 .footer .share{
     font-size: 0;
+	margin-left: 30px;
 }
 .footer .share .awe-icon  {
     -webkit-transition: all .3s linear;
@@ -2497,9 +2381,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 50px;
     height: 50px;
     line-height: 50px;
-    background-color: #2e2e2e;
     color: #fff;
-    margin: 70px 10px 0 10px;
+    margin: 0 15px;
 }
 
 .footer  .share a .fa-facebook:hover{
@@ -2574,14 +2457,14 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .awe-footer .js-footer-subtitle {
-    font: 300 2em/1.6em 'Lato';
+    font: 300 2em/1.6em 'futura';
     margin-top: 10px;
     display: block;
 }
 
 .awe-footer .js-footer-desc {
     color: #696969;
-    font: 300 1.6em/1.8em 'Lato';
+    font: 300 1.6em/1.8em 'futura';
     margin-top: 10px;
 }
 
@@ -2833,7 +2716,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 16px;
     margin-top: 6px;
     position: relative;
-    font: 900 12px 'Lato';
+    font: 900 12px 'futura';
     text-transform: uppercase;
 }
 .blog-title ul li:after {
@@ -2954,7 +2837,7 @@ ul.page-numbers li a,
     border-radius: 0 !important;
     color: #000;
     display: block;
-    font:700 16px/28px 'Lato';
+    font:700 16px/28px 'futura';
     height: 30px;
     margin: 0;
     margin-right: 5px;
@@ -3011,7 +2894,7 @@ ul.page-numbers li.current-page a,
 .widget_search form input {
     border: 1px solid #dcdcdc;
     color: #8d8d8d;
-    font:300 1.4em 'Lato';
+    font:300 1.4em 'futura';
     height: 44px;
     padding: 0 17px;
     width: 100%;
@@ -3062,7 +2945,7 @@ ul.page-numbers li.current-page a,
 .widget_meta ul li,
 .widget_categories ul li,
 .widget_recent_comments ul li {
-    font:300 16px/26px 'Lato';
+    font:300 16px/26px 'futura';
     color: #696969;
 }
 .widget_recent_comments ul li {
@@ -3079,7 +2962,7 @@ ul.page-numbers li.current-page a,
 .widget_recent_comments ul li a  {
     display: inline-block;
     color: #696969;
-    font:300 16px/26px 'Lato';
+    font:300 16px/26px 'futura';
     padding: 15px 0;
 
     -moz-transition: all .3s ease;
@@ -3095,16 +2978,16 @@ ul.page-numbers li.current-page a,
 }
 #wp-calendar caption {
     color: #fff;
-    font: 400 18px/40px 'Lato';
+    font: 400 18px/40px 'futura';
     background-color: #696969;
 }
 #wp-calendar th {
     color: #696969;
-    font: 700 16px/26px 'Lato';
+    font: 700 16px/26px 'futura';
 }
 #wp-calendar td {
     color: #696969;
-    font: 300 16px/26px 'Lato';
+    font: 300 16px/26px 'futura';
 }
 #wp-calendar td a {
     font-weight: 700;
@@ -3115,7 +2998,7 @@ ul.page-numbers li.current-page a,
 .textwidget select {
     width: 100%; height: 40px;
     color: #696969;
-    font: 300 16px/26px 'Lato';
+    font: 300 16px/26px 'futura';
     background-color: #fff;
     border: 1px solid #eee;
     padding: 0 15px;
@@ -3133,7 +3016,7 @@ ul.page-numbers li.current-page a,
     margin-top: 20px;
 }
 .widget_rss ul li {
-    font-family: 'Lato';
+    font-family: 'futura';
     font-size: 16px;
     font-weight: 300;
     line-height: 1.5em;
@@ -3165,7 +3048,7 @@ ul.page-numbers li.current-page a,
 }
 #commentform .controls,
 #commentform .form-allowed-tags {
-    font-family: 'Lato';
+    font-family: 'futura';
     font-size: 16px;
     color: #696969;
     margin-top: 10px;
@@ -3255,7 +3138,7 @@ ul.page-numbers li.current-page a,
     height: 29px;
     margin: 5px;
     color: #696969;
-    font: 300 16px/25px 'Lato' !important;
+    font: 300 16px/25px 'futura' !important;
     padding: 0px 9px;
     text-align: center;
     -webkit-transition: all .3s ease;
@@ -3271,7 +3154,7 @@ ul.page-numbers li.current-page a,
 }
 .blog-detail {
     color: #8d8d8d;
-    font:300 1.6em/1.6em 'Lato';
+    font:300 1.6em/1.6em 'futura';
 }
 .blog-detail p.p-blog-detail{
     margin-top: 65px;
@@ -3331,13 +3214,13 @@ ul.page-numbers li.current-page a,
 .date-comment {
     color: #222222;
     display: block;
-    font:900 1.2em 'Lato';
+    font:900 1.2em 'futura';
     margin-top: 2px;
     text-transform: uppercase;
 }
 .detail-comment {
     color: #696969;
-    font:300 1.6em/1.6em 'Lato';
+    font:300 1.6em/1.6em 'futura';
     margin-top: 20px;
 }
 .reply-comment {
@@ -3708,7 +3591,7 @@ ul.page-numbers li.current-page a,
 
 .blog-item p {
     color: #696969;
-    font-family: 'Lato';
+    font-family: 'futura';
     font-weight: 300;
     font-size: 16px;
     line-height: 28px;
@@ -3743,7 +3626,7 @@ h6 {
     font-size: 16px;
 }
 p {
-    font-family: 'Lato';
+    font-family: 'futura';
     font-weight: 300;
     line-height: 1.5em;
 }
@@ -3884,7 +3767,7 @@ caption, th, td {
 .blog-descript .edit-link a {
     font-size: 12px;
     font-weight: 400;
-    font-family: 'Lato';
+    font-family: 'futura';
     margin-top: 20px;
     position: relative;
     text-transform: uppercase;
@@ -3925,7 +3808,7 @@ img.alignright, .wp-caption.alignright {
 .blog-descript  form input {
     border: 1px solid #dcdcdc;
     color: #8d8d8d;
-    font: 300 1.4em "Lato";
+    font: 300 1.4em "futura";
     height: 44px;
     padding: 0 17px;
 }

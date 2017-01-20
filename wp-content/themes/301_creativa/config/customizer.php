@@ -95,7 +95,7 @@ class wm_customize
 
         ###### GENERAL OPTIONS SECTION ######
         $wp_customize->add_section('awe_theme_config_section', array(
-            'title'    => __('301 Settings', LANGUAGE),
+            'title'    => __('Viska Settings', LANGUAGE),
             'priority' => 1,
         ));
 

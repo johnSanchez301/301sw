@@ -26,7 +26,7 @@
                             //var_dump($info);
                         ?>
                         <div class="js-content-item <?php hasSlider('client') ?> <?php clientItem(); ?> <?php animationContent('client'); ?> wow" data-wow-duration="0.8s" data-animate="<?php animationContent('client'); ?>">
-                            <a href="<?php echo $info['url']; ?>">
+                            <a target="_blank" href="<?php echo $info['url']; ?>">
                                 <img src="<?php echo $info['logo']; ?>" alt="<?php the_title(); ?>">
                             </a>
                         </div>

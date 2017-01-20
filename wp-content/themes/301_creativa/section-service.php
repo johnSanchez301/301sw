@@ -4,7 +4,8 @@
     if($customize['service']['show'] || $is_customize_mode): 
 ?>
     <section id="services" class="awe-section services awe-parallax" <?php display_background_css('service'); ?> >
-        <div class="container">
+        <div class="before"></div>
+		<div class="container">
             <div class="row">
 
                 <!-- The title -->

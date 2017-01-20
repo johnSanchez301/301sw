@@ -4,7 +4,8 @@
     if($customize['idea']['show'] || $is_customize_mode): 
 ?>
     <section id="process" class="awe-section process" <?php display_background_css('idea'); ?>>
-        <div class="container">
+        <div class="before"></div>
+		<div class="container">
             <div class="row">   
                 <?php displayHeader('idea'); ?>
                 <div class="awe-content js-awe-get-items">

@@ -104,7 +104,7 @@
 		font-size: 2em;
 	}
 	#team .item .img .content p,#filters,#testimonial .owl-buttons{
-		margin-top: 20px;
+		margin-top: 180px;
 	}
     #about .about-img {
         margin-top: 50px;
@@ -278,7 +278,7 @@
 		text-align: center;
 	}
 	#testimonial .item .icon, #team .item .img .content p{
-		margin-top: 50px;
+		margin-top: 180px;
 	}
 	#testimonial .item p{
 		font-size: 2em;
@@ -307,6 +307,13 @@
         float: none;
     }
 }
+
+@media screen and (max-width: 370px){
+	#testimonial .item .icon, #team .item .img .content p {
+		margin-top: 130px;
+	}
+}
+
 @media screen and (max-width: 320px){
     .home-content .item h2 {
         font-size: 3.5em !important;

@@ -41,10 +41,10 @@ function displayLogo(){
 	?>
 	<h1 class="logo">
 		<?php if($logo!='') : ?>
-       		<a href="<?php echo home_url(); ?>" <?php echo $style_1; ?> class="logo-image" title="<?php bloginfo('name') ?>"><img src="<?php echo esc_url($logo); ?>"></a>
+       		<a href="<?php echo home_url(); ?>" <?php echo $style_1; ?> class="logo-image" title="<?php bloginfo('name') ?>"><img src="../wp-content/themes/301_creativa/assets/images/logo-header.svg"></a>
        	<?php endif; ?>
        	<?php if($logo_stickey!='') : ?>
-        	<a href="<?php echo home_url(); ?>" <?php echo $style_2; ?> class="logo-image-sticky" title="<?php bloginfo('name') ?>"><img src="<?php echo esc_url($logo_stickey); ?>"></a>
+        	<a href="<?php echo home_url(); ?>" <?php echo $style_2; ?> class="logo-image-sticky" title="<?php bloginfo('name') ?>"><img src="../wp-content/themes/301_creativa/assets/images/logo-stiky-header.svg"></a>
         <?php endif; ?>
     </h1>
     <?php
