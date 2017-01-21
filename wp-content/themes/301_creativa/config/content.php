@@ -149,6 +149,13 @@ function display_meta_box($args=false)
         <div class="metabox">
             <ul>
                 <li>
+                    <?php echo get_the_date(); ?>
+                </li>
+            </ul>
+        </div>
+        <div class="metbox-prologo">
+            <ul>
+                <li>
                     <?php _e('Posted by',LANGUAGE);?>
                     <a href="<?php echo esc_url( get_author_posts_url( $authordata->ID, $authordata->user_nicename ) );?>"><?php echo get_the_author();?></a>
                 </li>

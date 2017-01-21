@@ -68,6 +68,171 @@ body.blog .container .blog-image a {
     position: relative;
 }
 
+body.blog .blog-title span.fa {
+    display: none;
+}
+
+body.blog .blog-title {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+body.blog .blog-title h2, body.blog .blog-title ul li {
+    text-transform: inherit;
+}
+
+body.blog .blog-title h2 a {
+    font-size: 2.9rem;
+    line-height: 3.5rem;
+}
+
+body.blog .blog-title ul li {
+    font-family: futura-bt;
+    font-size: 18px;
+}
+
+body.blog .blog-item {
+    font-size: 0;
+    clear: both;
+    border: none;
+}
+
+body.blog .blog-item .blog-read-more {
+    background: #b1372b;
+    color: #fff;
+    font-family: JaneAust;
+    border: none;
+    padding: 20px 45px;
+    font-size: 1.1rem;
+    width: auto;
+    display: inline-block;
+    line-height: 0.4rem;
+    text-transform: inherit;
+}
+
+body.blog .blog-item .blog-type-cont, body.blog .blog-item .cont-info {
+    width: 50%;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: futura-bt;
+    position: relative;
+}
+
+body.blog .blog-item .blog-type-cont span {
+    font-family: JaneAust;
+    color: #b1372b;
+}
+
+
+body.blog .blog-type-cont span.fa {
+    font-family: FontAwesome;
+}
+
+body.blog .blog-type-cont .blog-link p {
+    font-size: 16px;
+    padding-left: 130px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+body.blog .blog-item .cont-info {
+    padding: 0 40px;
+}
+
+body.blog .blog-item .blog-descript {
+    padding-left: 40px;
+}
+
+body.blog .blog-descript .post-control {
+    text-align: center;
+}
+
+body.blog .blog-type-cont .blog-image {
+    padding: 20px;
+    border: #000 solid 1px;
+    margin-top: 12px;
+}
+
+body.blog .blog-type-cont .blog-image img {
+    margin: 0;
+}
+
+body.blog .blog-item .blog-fecha {
+    background: #fff;
+    padding: 0 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 160px;
+}
+
+body.blog .blog-text-post .metabox, body.blog .cont-of-post .metabox {
+    display: none;
+}
+
+body.blog .blog-item:nth-child(odd) .blog-type-cont, body.blog .blog-item:nth-child(odd) .cont-info {
+    float: right;
+}
+
+body.blog .blog-item:nth-child(1) .blog-type-cont, body.blog .blog-item:nth-child(1) .cont-info {
+    width: 100%;
+    padding: 0;
+}
+
+body.blog .blog-item:nth-child(1) .blog-image {
+    padding: 0;
+    border: none;
+}
+
+body.blog .blog-item:nth-child(1) .blog-title .metabox {
+    padding-left: 140px;
+    position: relative;
+    display: block;
+}
+
+body.blog .blog-item:nth-child(1) .blog-fecha {
+    display: none;
+}
+
+body.blog .blog-item:nth-child(1) .blog-title .metabox:before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 300px;
+    background: #079ab7;
+    position: absolute;
+    top: 63%;
+    left: -169px;
+}
+
+body.blog .blog-item:nth-child(1) {
+    overflow: inherit;
+    width: 100%;
+}
+
+body.blog .blog-item:nth-child(1) .blog-descript, body.blog .blog-item:nth-child(1) .blog-title, body.blog .blog-item:nth-child(1) .blog-image {
+    width: 100%;
+}
+
+body.blog .blog-item:nth-child(1) .blog-descript p, body.blog .blog-item:nth-child(1) .blog-descript .post-control {
+    display: inline-block;
+}
+
+body.blog .blog-item:nth-child(1) .blog-descript {
+    padding-left: 0;
+}
+
+body.blog .blog-item:nth-child(1) .blog-descript p {
+    width: 81.6%;
+    font-size: 1.2rem;
+}
+
+body.blog .blog-item:nth-child(1) .blog-descript .post-control {
+    width: 18.4%;
+}
+
 body.blog .container .blog-item:nth-child(1) .blog-image:before {
     content: "";
     display: block;
@@ -80,4 +245,39 @@ body.blog .container .blog-item:nth-child(1) .blog-image:before {
     left: -2%;
     right: 0;
     bottom: 0;
+}
+
+body.blog .blog-item:nth-child(1) .blog-read-more {
+    margin: 0;
+    background: #079ab7;
+}
+
+body.blog .metbox-prologo {
+    display: none;
+}
+
+/*interna*/
+
+body.single .blog-title-p {
+    font-size: 3.5rem;
+    margin: 40px 0 20px 0;
+    text-align: center;
+}
+
+body.single .metabot-blog-interna {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+body.single .col-md-offset-1 {
+    margin-left: 3.333333%;
+}
+
+body.single .col-md-8 {
+    width: 71.666667%;
+}
+
+body.blog.single .blog-item .blog-descript p {
+    width: 100%;
 }

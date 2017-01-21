@@ -2,6 +2,7 @@
 
 <!-- End Blog Gallery -->
 <div class="blog-item">
+    <div class="blog-type-cont">
     <?php
     $gallery=get_post_meta(get_the_ID(),'gallery',true);
     $img_html ='';
@@ -20,6 +21,8 @@
         </div>
     </div>
     <?php endif;?>
+    </div>
+    <div class="cont-info">
     <div class="blog-title">
         <span class="fa fa-picture-o"></span>
         <h2 title="<?php the_title(); ?>"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -41,5 +44,6 @@
     </div>
     <div class="blog-descript">
         <?php do_action('awe_post_content'); ?>
+    </div>
     </div>
 </div>

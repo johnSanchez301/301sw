@@ -1,6 +1,6 @@
 <!-- Blog Audio -->
 <div class="blog-item">
-
+    <div class="post-type-post">
     <div class="blog-audio">
         <?php
         $audio=get_post_meta(get_the_ID(),'audio',true);
@@ -20,6 +20,8 @@
             </script>
         <?php endif;?>
     </div>
+    </div>
+    <div class="cont-info">
     <div class="blog-title">
         <span class="fa fa-music"></span>
         <h2 title="<?php the_title(); ?>"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -42,6 +44,7 @@
     <div class="blog-descript">
         <?php do_action('awe_post_content'); ?>
 
+    </div>
     </div>
 </div>
 <!-- End Blog Audio -->

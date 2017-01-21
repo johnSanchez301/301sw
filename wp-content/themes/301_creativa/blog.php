@@ -50,7 +50,7 @@ get_header();
                             <!-- End Page Navigation --> 
                         </div>
                         <div class="col-md-12">
-                        <?php dynamic_sidebar('sidebar'); ?>
+                        <?php /*dynamic_sidebar('sidebar');*/ ?>
                         </div>
                     <?php endif; ?>
                     <?php // end full with layer // ?>

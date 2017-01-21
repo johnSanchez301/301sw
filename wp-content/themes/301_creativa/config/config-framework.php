@@ -43,7 +43,7 @@ function change_more_link_class()
 add_filter('awe_read_more_label','read_more_label');
 function read_more_label()
 {
-    return __('Read More',LANGUAGE);
+    return __('Leer más...',LANGUAGE);
 }
 
 

@@ -1,5 +1,6 @@
 <!-- Blog Video -->
 <div class="blog-item">
+    <div class="blog-type-cont">
     <?php
     $videos=get_post_meta(get_the_ID(),'videos',true);
     $video_html = '';
@@ -19,6 +20,8 @@
         ?>
     </div>
     <?php endif;?>
+    </div>
+    <div class="cont-info">
     <div class="blog-title">
         <span class="fa fa-file-video-o"></span>
         <h2 title="<?php the_title(); ?>"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -41,7 +44,7 @@
     <div class="blog-descript">
         <?php do_action('awe_post_content'); ?>
     </div>
-    
+    </div>
 
 </div>
 <!-- End Blog Video -->

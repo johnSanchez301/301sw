@@ -1,6 +1,23 @@
 <?php while(have_posts()) : the_post(); ?>
     <!-- Blog Gallery -->
     <div class="blog-item">
+    <h1 class="blog-title-p" title="<?php the_title(); ?>"><?php the_title(); ?></h1>
+    <div class="metabot-blog-interna">
+    <?php if(display_meta_box()) : ?>
+            <ul>
+                <li>
+                    <?php echo get_the_date(); ?>
+                </li>
+                <li>
+                    <?php $author = get_the_author(); _e('by',LANGUAGE); echo ' <a href="'.get_author_posts_url($post->post_author).'">'.$author.'</a>';
+                    ?>
+                </li>
+                <li>
+                    <?php comments_number( __('No comment',LANGUAGE), __('1 comment',LANGUAGE), __('% comments',LANGUAGE) ); ?>
+                </li>
+            </ul>
+        <?php endif; ?>
+    </div>
     <?php 
         $format = get_post_format();
         $thumb = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()),'awe-post-thumb',false );
@@ -157,22 +174,6 @@
                 break;
         }
     ?>
-        
-            <h1 title="<?php the_title(); ?>"><?php the_title(); ?></h1>
-        <?php if(display_meta_box()) : ?>
-            <ul>
-                <li>
-                    <?php echo get_the_date(); ?>
-                </li>
-                <li>
-                    <?php $author = get_the_author(); _e('by',LANGUAGE); echo ' <a href="'.get_author_posts_url($post->post_author).'">'.$author.'</a>';
-                    ?>
-                </li>
-                <li>
-                    <?php comments_number( __('No comment',LANGUAGE), __('1 comment',LANGUAGE), __('% comments',LANGUAGE) ); ?>
-                </li>
-            </ul>
-        <?php endif; ?>
         </div>
         <div class="blog-descript">
             <?php do_action('awe_post_content'); ?>
