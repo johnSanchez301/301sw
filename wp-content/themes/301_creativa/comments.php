@@ -48,13 +48,13 @@ if ( post_password_required() ) { ?>
 
         'id_submit'            => 'submit',
 
-        'title_reply'          => __( 'LEAVE YOUR COMMENT HERE',LANGUAGE ),
+        'title_reply'          => __( 'Deja tu comentario aquí',LANGUAGE ),
 
         'title_reply_to'       => __( 'Leave a Reply %s',LANGUAGE ),
 
-        'cancel_reply_link'    => __( 'Cancel reply',LANGUAGE ),
+        'cancel_reply_link'    => __( 'Cancelar Respuesta',LANGUAGE ),
 
-        'label_submit'         => __( 'SUBMIT',LANGUAGE ),
+        'label_submit'         => __( 'Enviar',LANGUAGE ),
 
     );
 

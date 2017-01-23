@@ -33,7 +33,7 @@ function viska_get_comment_reply_link($args = array(), $comment = null, $post = 
     if ( get_option('comment_registration') && ! is_user_logged_in() )
         $link = '<a rel="nofollow" class="comment-reply-login" href="' . esc_url( wp_login_url( get_permalink() ) ) . '">' . $login_text . '</a>';
     else
-        $link = "<a class='comment-reply-link reply-comment' href='" . esc_url( add_query_arg( 'replytocom', $comment->comment_ID ) ) . "#" . $respond_id . "' onclick='return addComment.moveForm(\"$add_below-$comment->comment_ID\", \"$comment->comment_ID\", \"$respond_id\", \"$post->ID\")'><span class=\"icon md-lineart_reply\"></span>$reply_text</a>";
+        $link = "<a class='comment-reply-link reply-comment' href='" . esc_url( add_query_arg( 'replytocom', $comment->comment_ID ) ) . "#" . $respond_id . "' onclick='return addComment.moveForm(\"$add_below-$comment->comment_ID\", \"$comment->comment_ID\", \"$respond_id\", \"$post->ID\")'><span class=\"icon md-lineart_reply\"></span>Responder</a>";
 
     /**
      * Filter the comment reply link.
@@ -70,7 +70,7 @@ class viska_walker_comment extends Walker_Comment {
      * start_lvl() only goes as high as 1 deep nested comments */
     function __construct() { ?>
         
-        <h2 id="comments-title" class="title-right-blog" ><?php comments_number(__("Comment",LANGUAGE) .'' . __("(0)",LANGUAGE) . '', __("Comment",LANGUAGE) .'' . __("(1)",LANGUAGE) . '', __("Comments",LANGUAGE) .'(%)' );?></h2>
+        <h2 id="comments-title" class="title-right-blog" ><?php comments_number(__("Comentarios",LANGUAGE) .'' . __("(0)",LANGUAGE) . '', __("Comentarios",LANGUAGE) .'' . __("(1)",LANGUAGE) . '', __("Comentarios",LANGUAGE) .'(%)' );?></h2>
         
     <?php }
     

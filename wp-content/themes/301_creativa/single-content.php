@@ -183,8 +183,5 @@
     </div>
     <!-- End Blog Gallery -->
 
-    <!-- Blog Comment -->
-        <?php display_comment_box();?>
-        <?php paginate_comments_links() ?>
 <!-- End Blog Left -->
 <?php endwhile; wp_reset_query(); ?>

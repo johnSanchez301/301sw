@@ -4822,7 +4822,7 @@ msgstr ""
 
 #: comments.php:51
 #@ viska
-msgid "LEAVE YOUR COMMENT HERE"
+msgid "Deja tu comentario aquí"
 msgstr ""
 
 #: comments.php:57

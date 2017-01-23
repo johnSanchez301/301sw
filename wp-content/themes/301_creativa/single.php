@@ -52,6 +52,14 @@ $is_customize_mode =  (has_action( 'customize_controls_init' )) ? true : false;
             </div>
         </div>
         <!-- End Blog Singer-->
+        <div class="blog-coment-301">
+            <!-- Blog Comment -->
+            <div class="container">
+                <?php display_comment_box();?>
+                <?php paginate_comments_links() ?>
+            </div>
+            <!-- end Blog Comment -->
+        </div>
     </div>
     <!-- ENd Main -->
 
