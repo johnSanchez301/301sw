@@ -84,5 +84,5 @@ get_header();
     </div>
     <!-- ENd Main -->
     <!-- End Blog -->
-
+    <?php get_template_part('section','contact'); ?>
 <?php get_footer(); ?>

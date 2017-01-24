@@ -72,5 +72,6 @@ $is_customize_mode =  (has_action( 'customize_controls_init' )) ? true : false;
         <!-- end related blogs -->
     </div>
     <!-- ENd Main -->
+    <?php get_template_part('section','contact'); ?>
 
 <?php get_footer(); ?>

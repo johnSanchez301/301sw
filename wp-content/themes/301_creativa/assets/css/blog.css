@@ -513,6 +513,10 @@ body.blog.single .blog-item .blog-descript p {
     margin-top: 20px;
 }
 
+body.single #contact.awe-section.contact {
+    margin-top: 0;
+}
+
 @media screen and (max-width:1170px) {
     body.blog .blog-item:nth-child(1) .blog-descript p, body.blog .blog-item:nth-child(1) .blog-descript .post-control {
         width: 100%;
