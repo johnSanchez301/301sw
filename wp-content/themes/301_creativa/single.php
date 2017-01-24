@@ -60,6 +60,16 @@ $is_customize_mode =  (has_action( 'customize_controls_init' )) ? true : false;
             </div>
             <!-- end Blog Comment -->
         </div>
+        <!-- related blogs -->
+        <div class="related-blog">
+            <div class="container">
+            <div class="cont-title">
+                <h3>Historias<span>relacionadas</span></h3>
+            </div>
+            <?php zemanta_related_posts()?>
+            </div>
+        </div>
+        <!-- end related blogs -->
     </div>
     <!-- ENd Main -->
 
