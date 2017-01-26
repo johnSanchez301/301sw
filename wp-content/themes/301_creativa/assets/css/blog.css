@@ -63,6 +63,11 @@ body.single .blog-item .blog-list-img {
     height: auto;
 }
 
+
+body.single .blog-item .blog-list-img img {
+    width: 100%;
+}
+
 body.blog .container .blog-image a {
     overflow: hidden;
     display: block;
@@ -295,7 +300,7 @@ body.single .col-md-8 {
     width: 71.666667%;
 }
 
-body.single .col-md-8 .blog-descript:after {
+body.single .col-md-8 .blog-descript:after, body.single .col-md-12 .blog-descript:after  {
     content: "";
     width: 90%;
     height: 1px;
@@ -517,6 +522,43 @@ body.single #contact.awe-section.contact {
     margin-top: 0;
 }
 
+#crestashareiconincontent:before {
+    content: "Compartir en";
+    display: inline-block;
+    font-size: 1rem;
+    vertical-align: middle;
+    margin-top: 25px;
+    margin-right: 15px;
+    float: left;
+}
+
+.cresta-share-icon .sbutton.crestaShadow a i {
+    background-color: transparent;
+    color: #212121;
+    font-size: 1.6rem !important;
+    border: none;
+}
+
+.cresta-share-icon .sbutton a i:hover {
+    border: none !important;
+    opacity: 0.5;
+}
+
+.cresta-share-icon .sbutton.crestaShadow a i:after {
+    display: none;
+}
+
+.juiz_sps_links a:hover, .juiz_sps_links a:focus {
+    color: #000000!important;
+}
+
+@media screen and (max-width:1280px) {   
+    .related-blog {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
 @media screen and (max-width:1170px) {
     body.blog .blog-item:nth-child(1) .blog-descript p, body.blog .blog-item:nth-child(1) .blog-descript .post-control {
         width: 100%;
@@ -559,6 +601,7 @@ body.single #contact.awe-section.contact {
     #content-blog {
         padding-top: 10px;
     }
+    
 }
 
 @media screen and (max-width:425px) {
@@ -576,6 +619,15 @@ body.single #contact.awe-section.contact {
     
     body.blog #page-wrap .title-blog span {
         padding: 0;
+    }
+    
+    .related-blog ul.related_post li {
+        width: 100% !important;
+        margin: 10px 0 10px 0 !important;
+    }
+    
+    body.single .related-blog ul.related_post li > a {
+        float: none !important;
     }
 }
 
@@ -605,3 +657,6 @@ body.single #contact.awe-section.contact {
 @media screen and (max-width:320px) { 
 
 }
+
+/* - ERROR 404 -*/
+

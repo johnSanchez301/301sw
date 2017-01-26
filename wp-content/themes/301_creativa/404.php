@@ -32,5 +32,3 @@ $is_customize_mode =  (has_action( 'customize_controls_init' )) ? true : false;
     </div>
     <!-- ENd Main -->
     <!--=============== section blog end ===============-->
-
-<?php get_footer(); ?>
