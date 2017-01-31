@@ -32,8 +32,15 @@ get_header();
     query_posts('post_type=post&posts_per_page='.$post_per_page.'&showposts='.$post_per_page.'&paged='.$paged );
 ?>
 <!-- Blog -->
-   
     <div id="main">
+        <div class="container">
+            <div class="breadcrumbs" typeof="BreadcrumbList">
+                <?php if(function_exists('bcn_display'))
+                {
+                    bcn_display();
+                }?>
+            </div>
+        </div>
         <div class="title-blog">
             <div class="container">
                <h3>Vivimos<span>las marcas</span></h3>
