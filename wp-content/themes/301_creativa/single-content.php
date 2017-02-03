@@ -1,7 +1,14 @@
+<div class="breadcrumbs" typeof="BreadcrumbList">
+	<?php if(function_exists('bcn_display'))
+	{
+		bcn_display();
+	}?>
+</div>
 <?php while(have_posts()) : the_post(); ?>
     <!-- Blog Gallery -->
     <div class="blog-item">
     <h1 class="blog-title-p" title="<?php the_title(); ?>"><?php the_title(); ?></h1>
+	<p class="blog-fecha"><?php echo get_the_date(); ?></p>
     <div class="metabot-blog-interna">
     <?php if(display_meta_box()) : ?>
             <ul>
@@ -20,7 +27,7 @@
     </div>
     <?php 
         $format = get_post_format();
-        $thumb = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()),'awe-post-thumb',false );
+        $thumb = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()),'large',false );
         switch ($format) {
             case 'gallery':
                 $gallery = get_post_meta($post->ID,'gallery',true);
@@ -175,6 +182,7 @@
         }
     ?>
         </div>
+		
         <div class="blog-descript">
             <?php do_action('awe_post_content'); ?>
 

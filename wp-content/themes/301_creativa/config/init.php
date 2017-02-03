@@ -34,7 +34,7 @@ function awe_theme_setup()
     /* Add support thumbnail */
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 370, 9999 ); // Unlimited height, soft crop
-    add_image_size( 'awe-post-thumb', 770, 450, true );
+    add_image_size( 'awe-post-thumb', 1224, 768, true );
     add_image_size( 'awe-team-thumb', 370, 313, true );
     add_image_size( 'awe-portfolio-thumb', 316, 211, true );
     add_image_size( 'awe-last_post-thumb', 370, 370, true );

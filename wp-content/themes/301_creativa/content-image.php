@@ -9,7 +9,7 @@
     if($gallery && is_array($gallery))
         $img_html .= '<a href="'.get_the_permalink().'"><img alt="'.get_the_title().'" src="'.$gallery[0].'"></a>';
     if(!$img_html){
-        $thumb = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()),'awe-post-thumb',false );
+        $thumb = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()),'large',false );
         if(!empty($thumb[0]))
         {
             $img_html .= '<a href="'.get_the_permalink().'"><img alt="'.get_the_title().'" src="'.$thumb[0].'"></a>';

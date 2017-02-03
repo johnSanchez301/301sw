@@ -100,10 +100,10 @@ class viska_walker_comment extends Walker_Comment {
                 <?php echo ( $args['avatar_size'] != 0 ? get_avatar( $comment, $args['avatar_size'] ) :'' ); ?>
             </div><!-- /.comment-author -->
             <span class="user-comment"><?php echo get_comment_author_link(); ?></span>
-            <span class="date-comment"><?php comment_time('F j, Y \A\T  g:i A'); ?><?php edit_comment_link( '(Edit)' ); ?></span>
+            <span class="date-comment"><?php comment_time('F j, Y g:i A'); ?><?php edit_comment_link( '(Edit)' ); ?></span>
                 <div id="comment-content-<?php comment_ID(); ?>" class="detail-comment">
                     <?php if( !$comment->comment_approved ) : ?>
-                    <em class="comment-awaiting-moderation">Your comment is awaiting moderation.</em>
+                    <em class="comment-awaiting-moderation">Tu comentario está esperando ser moderado.</em>
                     <?php else: comment_text(); ?>
                     <?php endif; ?>
 

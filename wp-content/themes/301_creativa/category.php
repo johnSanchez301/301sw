@@ -15,6 +15,12 @@ $is_customize_mode =  (has_action( 'customize_controls_init' )) ? true : false;
 ?>
 <!-- Blog -->
     <div id="main">
+		<div class="breadcrumbs" typeof="BreadcrumbList" >
+			<?php if(function_exists('bcn_display'))
+			{
+				bcn_display();
+			}?>
+		</div>
         <!-- Content Blog -->
             <div id="content-blog">
                 <div class="container">
