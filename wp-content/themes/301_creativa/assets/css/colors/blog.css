@@ -897,6 +897,16 @@ div#comment-status p {
     font-weight: bolder;
 }
 
+.breadcrumbs > span:first-child:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 14px;
+    height: 40px;
+    left: 93px;
+    top: 5px;
+}
+
 .breadcrumbs > span:first-child a {
     color: #fff;
     font-family: 'futura-bt';
