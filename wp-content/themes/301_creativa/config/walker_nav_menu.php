@@ -203,7 +203,7 @@ function showMegaConfigBoxx()
 
 
     $homeUrl = home_url();
-    $aSetting = array('#home'=>'Home','#banner'=>'Home Hidden','#about'=>'About Us','#skill'=>'Skills', '#team'=>'Team','#funfacts'=>'Fun Facts', '#work'=>'Work','#process'=>'Our Process','#twitter'=>'Twitter', '#testimonial'=>'Testimonial', '#plans'=>'Pricing','#services'=>'Services','#news'=>'Lasted Posts','#client'=>'Client', '#contact'=>'Contact','#map' => 'Map');
+    $aSetting = array('#home'=>'Inicio','#banner'=>'Home Hidden','#about'=>'Lo qué somos','#skill'=>'Estadísticas', '#team'=>'Equipo creativo','#funfacts'=>'Fun Facts', '#work'=>'Work','#process'=>'Cómo lo hacemos','#twitter'=>'Twitter', '#testimonial'=>'Testimonial', '#plans'=>'Pricing','#services'=>'Lo qué hacemos','#news'=>'Lasted Posts','#client'=>'Nuestras marcas', '#contact'=>'Contacto','#map' => 'Map');
 ?>
 
 <div id="posttype-edit-menu-item" class="posttypediv">

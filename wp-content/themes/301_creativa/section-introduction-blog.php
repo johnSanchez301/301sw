@@ -1,7 +1,13 @@
 <!-- Preloader -->
 <?php displayPreloadLogo(); ?>
     <!-- End Preloader -->
-
+<!-- Navigation Left-->
+<?php if(has_nav_menu( 'left_menu' )) : ?>    
+    <nav id="nav-left">
+        <?php awe_menu_left(); ?>
+    </nav>
+<!-- End Navigation Left-->
+<?php endif; ?>
     <!-- End Navigation -->
 <?php if(has_nav_menu( 'main_menu' )) : ?>
     <nav id="nav-menu">
