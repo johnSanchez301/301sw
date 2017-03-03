@@ -27,12 +27,12 @@ $is_customize_mode =  (has_action( 'customize_controls_init' )) ? true : false;
                     <div class="row">
                     <?php if($main_class == 'col-md-12') : ?>
                         <div class="col-md-12">
+                        <?php dynamic_sidebar('sidebar'); ?>
+                        </div>
+                        <div class="col-md-12">
                         <?php get_template_part('content','loop'); ?>
                         <?php get_template_part('pages_nav');?>
                             <!-- End Page Navigation --> 
-                        </div>
-                        <div class="col-md-12">
-                        <?php dynamic_sidebar('sidebar'); ?>
                         </div>
                     <?php endif; ?>
                     <?php // end full with layer // ?>
