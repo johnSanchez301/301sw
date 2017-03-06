@@ -18,7 +18,7 @@
                 </div>
                 <div class="newsletter news-home wow bounceInLeft" data-wow-duration="2s">
                     <h2>Boletín</h2>
-                    <p>¿Te gustaría estar informado de lo que pasa en las calles?</p>
+                    <p>¿Te gustaría estar informado de lo que pasa?</p>
                     <div class="301News tnp-subscription-minimal"> 
                           <?php dynamic_sidebar("Newsletter"); ?>
                     </div>

@@ -50,12 +50,12 @@ $is_customize_mode =  (has_action( 'customize_controls_init' )) ? true : false;
                 <?php endif; ?>
                 </div>
             </div>
-            <div class="blog-newsletter-301" style="display:none;">
+            <div class="blog-newsletter-301">
                 <!-- Blog newsletter -->
                 <div class="container">
                     <div class="newsletter newsletter-single wow bounceInTop" data-wow-duration="2s">
                         <h2>Boletín</h2>
-                        <p>¿Te gustaría estar informado de lo que pasa en las calles?</p>
+                        <p>¿Te gustaría estar informado de lo que pasa?</p>
                         <div class="301News tnp-subscription-minimal"> 
                              <?php dynamic_sidebar("Newsletter"); ?>
                           </div>

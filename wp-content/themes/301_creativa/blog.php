@@ -52,12 +52,12 @@ get_header();
                     <div class="row">
                     <?php if($main_class == 'col-md-12') : ?>
                         <div class="col-md-12">
+                        <?php dynamic_sidebar('sidebar'); ?>
+                        </div>
+                        <div class="col-md-12">
                         <?php get_template_part('content','loop'); ?>
                         <?php get_template_part('pages_nav');?>
                             <!-- End Page Navigation --> 
-                        </div>
-                        <div class="col-md-12">
-                        <?php /*dynamic_sidebar('sidebar');*/ ?>
                         </div>
                     <?php endif; ?>
                     <?php // end full with layer // ?>
@@ -84,6 +84,18 @@ get_header();
                         }
                     ?>
                         
+                    </div>
+                </div>
+                <div class="blog-newsletter-301">
+                    <!-- Blog newsletter -->
+                    <div class="container">
+                        <div class="newsletter newsletter-single newsletter-blog wow bounceInTop" data-wow-duration="2s">
+                            <h2>Boletín</h2>
+                            <p>¿Te gustaría estar informado de lo que pasa?</p>
+                            <div class="301News tnp-subscription-minimal"> 
+                                 <?php dynamic_sidebar("Newsletter"); ?>
+                              </div>
+                        </div>
                     </div>
                 </div>
             </div>
