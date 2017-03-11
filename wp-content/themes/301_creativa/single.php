@@ -15,6 +15,14 @@ $is_customize_mode =  (has_action( 'customize_controls_init' )) ? true : false;
 ?>
     <!--=============== wrapper ===============-->
     <div id="main">
+       <div class="container">
+           <div class="breadcrumbs" typeof="BreadcrumbList">
+                <?php if(function_exists('bcn_display'))
+                {
+                    bcn_display();
+                }?>
+            </div>
+       </div>
         <!-- Blog Singer-->
         <div id="content-blog">
             <div class="container">
@@ -40,12 +48,14 @@ $is_customize_mode =  (has_action( 'customize_controls_init' )) ? true : false;
                     </div>
                 <?php endif; ?>
                 <?php if($right != '') : ?>
-                    <div class="col-md-8">
-                    <?php get_template_part('single','content');?>
-                    <!-- Blog Right -->
-                    </div>
-                    <div class="col-md-3 col-md-offset-1 blog-list-right">
-                    <?php dynamic_sidebar('sidebar'); ?>
+                    <div class="categoria-301">
+                        <div class="col-md-3 col-md-offset-1 blog-list-right">
+                        <?php dynamic_sidebar('sidebar'); ?>
+                        </div>
+                        <div class="col-md-8">
+                        <?php get_template_part('single','content');?>
+                        <!-- Blog Right -->
+                        </div>
                     </div>
                 <?php endif; ?>
                 </div>

@@ -1,9 +1,3 @@
-<div class="breadcrumbs" typeof="BreadcrumbList">
-	<?php if(function_exists('bcn_display'))
-	{
-		bcn_display();
-	}?>
-</div>
 <?php while(have_posts()) : the_post(); ?>
     <!-- Blog Gallery -->
     <div class="blog-item">

@@ -15,12 +15,20 @@ $is_customize_mode =  (has_action( 'customize_controls_init' )) ? true : false;
 ?>
 <!-- Blog -->
     <div id="main">
-		<div class="breadcrumbs" typeof="BreadcrumbList" >
-			<?php if(function_exists('bcn_display'))
-			{
-				bcn_display();
-			}?>
-		</div>
+        <div class="container">
+            <div class="breadcrumbs" typeof="BreadcrumbList" >
+                <?php if(function_exists('bcn_display'))
+                {
+                    bcn_display();
+                }?>
+            </div>
+        </div>
+        <div class="title-blog title-category">
+            <div class="container">
+               <h3>Vivimos<span>las marcas</span></h3>
+               <h4><?php echo single_cat_title("", false); ?></h4>
+            </div>
+        </div>
         <!-- Content Blog -->
             <div id="content-blog">
                 <div class="container">
@@ -59,6 +67,18 @@ $is_customize_mode =  (has_action( 'customize_controls_init' )) ? true : false;
                         }
                     ?>
                         
+                    </div>
+                </div>
+                <div class="blog-newsletter-301">
+                    <!-- Blog newsletter -->
+                    <div class="container">
+                        <div class="newsletter newsletter-single wow bounceInTop" data-wow-duration="2s">
+                            <h2>Boletín</h2>
+                            <p>¿Te gustaría estar informado de lo que pasa?</p>
+                            <div class="301News tnp-subscription-minimal"> 
+                                 <?php dynamic_sidebar("Newsletter"); ?>
+                              </div>
+                        </div>
                     </div>
                 </div>
             </div>
