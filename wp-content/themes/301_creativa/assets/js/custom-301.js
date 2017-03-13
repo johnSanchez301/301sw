@@ -1,12 +1,31 @@
 //Iniciar metodos
 initCustom = function(){
+    addBlogWid();
 	previewGallery();
 	removeCategoryBread();
 	validateComment();
 	printGolosina();
 	eventSuscription();
+    margenTopC();
 };
+jQuery('.list-category').hide();
+jQuery('.btn-category').on('click', function(){
+    jQuery('.list-category').slideToggle();
+    jQuery(this).toggleClass('active')
+})
 
+addBlogWid = function(){
+    jQuery('.widget_categories ul').append("<li><a href='/blog/'>Blog</a></li>");
+}
+
+margenTopC = function(){
+    var topL = jQuery('body.single .blog-title-p').innerHeight();
+    var medir = jQuery('body.single .widget_categories').css("marginTop",topL+110);
+}
+
+jQuery(window).resize(function(){
+    margenTopC();
+})
 
 validateEmail = function(email) {
 	var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

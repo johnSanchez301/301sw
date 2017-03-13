@@ -43,7 +43,24 @@ get_header();
         </div>
         <div class="title-blog">
             <div class="container">
-               <h3>Vivimos<span>las marcas</span></h3>
+               <div class="grid-6">
+                   <h3>Vivimos<span>las marcas</span></h3>
+               </div>
+               <div class="grid-6">
+                  <aside class="categories-301">
+                      <a class="btn-category">Categorias<span><svg height="10" width="15"><polygon points="0,0 7.5,10 15,0" style="fill:#d94e3c"/></svg></span></a>
+                        <ul class="list-category">
+                            <?php
+                                $args = array (
+                                    'hide_empty' => 0,
+                                    'title_li' => false,
+                                    'style' => 'list',
+                                );
+                                wp_list_categories($args);
+                            ?>
+                        </ul>
+                    </aside>
+               </div>
             </div>
         </div>
         <!-- Content Blog -->
@@ -52,7 +69,7 @@ get_header();
                     <div class="row">
                     <?php if($main_class == 'col-md-12') : ?>
                         <div class="col-md-12">
-                        <?php dynamic_sidebar('sidebar'); ?>
+                        <?php /*dynamic_sidebar('sidebar');*/?>
                         </div>
                         <div class="col-md-12">
                         <?php get_template_part('content','loop'); ?>
