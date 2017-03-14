@@ -31,19 +31,21 @@ $is_customize_mode =  (has_action( 'customize_controls_init' )) ? true : false;
                <div class="grid-2">
                     <aside class="categories-301">
                       <a class="btn-category">Categorias<span><svg height="10" width="15"><polygon points="0,0 7.5,10 15,0" style="fill:#d94e3c"/></svg></span></a>
-                        <ul class="list-category">
-                            <?php
-                                $args = array (
-                                    'hide_empty' => 0,
-                                    'title_li' => false,
-                                    'style' => 'list',
-                                );
-                                wp_list_categories($args);
-                            ?>
-                            <li><a href='/blog/'>Blog</a></li>
-                        </ul>
                     </aside>
                </div>
+               <div class="categories-301">
+                   <ul class="list-category">
+                        <?php
+                            $args = array (
+                                'hide_empty' => 0,
+                                'title_li' => false,
+                                'style' => 'list',
+                            );
+                            wp_list_categories($args);
+                        ?>
+                        <li><a href='/blog/'>Blog</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- Content Blog -->

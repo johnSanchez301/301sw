@@ -8,6 +8,7 @@ initCustom = function(){
 	eventSuscription();
     margenTopC();
 };
+
 jQuery('.list-category').hide();
 jQuery('.btn-category').on('click', function(){
     jQuery('.list-category').slideToggle();

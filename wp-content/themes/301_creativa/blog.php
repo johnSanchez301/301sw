@@ -49,18 +49,20 @@ get_header();
                <div class="grid-6">
                   <aside class="categories-301">
                       <a class="btn-category">Categorias<span><svg height="10" width="15"><polygon points="0,0 7.5,10 15,0" style="fill:#d94e3c"/></svg></span></a>
-                        <ul class="list-category">
-                            <?php
-                                $args = array (
-                                    'hide_empty' => 0,
-                                    'title_li' => false,
-                                    'style' => 'list',
-                                );
-                                wp_list_categories($args);
-                            ?>
-                        </ul>
                     </aside>
                </div>
+               <div class="categories-301">
+                   <ul class="list-category">
+                        <?php
+                            $args = array (
+                                'hide_empty' => 0,
+                                'title_li' => false,
+                                'style' => 'list',
+                            );
+                            wp_list_categories($args);
+                        ?>
+                    </ul>
+                    <
             </div>
         </div>
         <!-- Content Blog -->
